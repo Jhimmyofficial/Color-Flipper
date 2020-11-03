@@ -19,6 +19,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   line-height: 1.6;
+  background-color: #0392bf;
   color: rgb(247, 216, 216);
 }
 /* End of General Styling */
@@ -26,7 +27,6 @@ body {
 /* Layout Styling */
 .container {
   max-width: 120rem;
-  background-color: #0392bf;
   height: 100vh;
   background-size: cover;
   background-position: top;
