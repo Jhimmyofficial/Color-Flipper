@@ -64,6 +64,7 @@ header .logo {
 .skater__logo {
   width: 55%;
   margin-left: 2rem;
+  animation: moveInLeft 2s ease-out;
 }
 
 .logo__text {
@@ -247,13 +248,29 @@ nav ul {
 }
 /* End Of Button Styling */
 
+/* Animations */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-5rem);
+  }
+  80% {
+    transform: translateX(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+/* End of Animations */
+
 /* Mobile View */
 @media only screen and (max-width: 40rem) {
   body {
     background-color: #0392bf;
   }
 
-  li {
+ li {
     list-style-type: none;
   }
   .flex {
@@ -268,6 +285,7 @@ nav ul {
   .logo {
     width: 100px;
   }
+
   header {
     position: fixed;
     top: 0px;
@@ -283,6 +301,7 @@ nav ul {
     padding-top: 80px;
     z-index: 2;
     justify-content: flex-start;
+    background-color: #0392bf;
     position: absolute;
     left: 0;
     top: 0;
@@ -324,15 +343,15 @@ nav ul {
   }
   .open #nav-icon div:nth-child(1) {
     transform: rotateZ(-45deg) translateX(-8px) translateY(10px);
-    color: #fff;
+    color: black;
   }
   .open #nav-icon div:nth-child(2) {
     opacity: 0;
-    color: #fff;
+    color: black;
   }
   .open #nav-icon div:nth-child(3) {
     transform: rotateZ(45deg) translateX(-8px) translateY(-10px);
-    color: #fff;
+    color: black;
   }
 
   .logo__paragraph {
@@ -382,5 +401,15 @@ nav ul {
   .btn-margin-top {
     margin-top: 2rem;
     margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 37.5rem) {
+  .menu__showcase {
+    margin-left: 1.3rem;
+  }
+
+  .color--span {
+    margin-left: 1.5rem;
   }
 }
