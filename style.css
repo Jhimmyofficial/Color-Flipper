@@ -96,6 +96,7 @@ header .logo {
   margin-left: 2rem;
   text-decoration: none;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .color--span__1 {
